@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 remote_theme           : "mmistakes/minimal-mistakes@4.22.0"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -20,6 +20,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "FirstName LastName"
 description              : "Description"
+github                   : [metadata]
 url                      : "https://cristal-sigma.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "CRIStAL-Sigma/cristal-sigma.github.io"
@@ -28,6 +29,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+date_format: "%Y-%m-%d"
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -94,38 +96,39 @@ analytics:
 # Site Author
 author:
   name             : "FirstName LastName"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "My short bio"
-  location         : "Location"
-  email            : "your.name@email.com"
-  links:
-    - label: "Email"
+  location         : "Lille, France"
+  email            : "my.name@email.com"
+  github           : "CRIStAL-Sigma"
+  links:  # uncomment url: to make link appear
+    - label: "Email"  # used above
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.name@email.com"
+    #   url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://cristal-sigma.github.io"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://cristal-sigma.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
     #   # url: "https://twitter.com/"
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
     #   # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://github.com/CRIStAL-Sigma"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
     #   # url: "https://instagram.com/"
 
 # Site Footer
 footer:
-  links:
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
+  links:  # uncomment url: to make link appear
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
     #   # url:
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-facebook-square"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
     #   # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -133,11 +136,11 @@ footer:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
-    # - label: "Bitbucket"
-    #   icon: "fab fa-fw fa-bitbucket"
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
     #   # url:
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
     #   # url:
 
 
@@ -209,7 +212,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Paris # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -273,9 +276,17 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
       author_profile: true
-      read_time: true
       comments: # true
-      share: true
+      layout: single
+      read_time: true
       related: true
+      share: true
+      show_date: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      author_profile: true
+      layout: single
