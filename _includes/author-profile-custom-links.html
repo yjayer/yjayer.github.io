@@ -5,3 +5,17 @@
     </a>
   </li>
 -->
+
+{% if author.googlescholar %}
+  <li>
+    <a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> Scholar
+    </a>
+  </li>
+{% endif %}
+
+{% if author.orcid %}
+  <li>
+    <a href="{{ author.orcid }}"><i class="ai ai-orcid-square" aria-hidden="true"></i> Orcid
+    </a>
+  </li>
+{% endif %}
