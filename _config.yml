@@ -101,9 +101,11 @@ author:
   location         : "Lille, France"
   email            : "my.name@email.com"
   github           : "CRIStAL-Sigma"
+  googlescholar    : "https://scholar.google.fr/"
+  orcid            : "https://orcid.org/"
   links:  # uncomment url: to make link appear
     - label: "Email"  # used above
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope"
     #   url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
