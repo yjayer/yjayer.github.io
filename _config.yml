@@ -94,44 +94,122 @@ analytics:
 
 
 # Site Author
+# See also how profile is displayed in
+# _includes/author-profile.html
+# _includes/author-profile-custom-links.html
 author:
-  name             : "FirstName LastName"
-  avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "My short bio"
-  location         : "Lille, France"
-  email            : "my.name@email.com"
-  github           : "CRIStAL-Sigma"
-  googlescholar    : "https://scholar.google.com/"
-  orcid            : "https://orcid.org/"
-  links:  # uncomment url: to make link appear
+  name: "FirstName LastName"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "My short bio"
+  location: "Lille, France"
+  email: "my.name@email.com"
+  github: "CRIStAL-Sigma"
+  webpage: "https://cristal-sigma.github.io"
+  # Academic profiles
+  # To make logo+link appear in author_profile on the left side of the page
+  # - fill the corresponding field
+  # - uncomment the correspond _includes/author-profile-custom-links.html
+  academic_profiles:
+    academia:
+    acclaim:
+    acm:
+    acmdl:
+    ads:
+    africarxiv:
+    arxiv: # https://arxiv.org/a/<orcid-id | arxiv-id>
+    biorxiv:
+    ceur:
+    ciencia-vitae:
+    closed-access:
+    conversation:
+    coursera:
+    crossref:
+    cv:
+    datacite:
+    dataverse:
+    dblp:
+    depsy:
+    doi:
+    dryad:
+    elsevier:
+    figshare:
+    google-scholar: #"https://scholar.google.com/citations?user=<user-id>=en"
+    hal: #https://orcid.org/<orcid-id>
+    hypothesis:
+    ideas-repec:
+    ieee:
+    impactstory:
+    inaturalist:
+    inpn:
+    inspire:
+    isidore:
+    jstor:
+    lattes:
+    mathoverflow:
+    mendeley:
+    moodle:
+    nakala:
+    open-access:
+    open-data:
+    open-materials:
+    obp:
+    openedition:
+    orcid: #https://orcid.org/<orcid-id>
+    osf:
+    overleaf:
+    philpapers:
+    piazza:
+    preregistered:
+    protocols:
+    psyarxiv:
+    publons:
+    pubmed:
+    pubpeer:
+    researcherid:
+    researchgate:
+    ror:
+    sci-hub:
+    scirate:
+    scopus:
+    semantic-scholar:
+    springer:
+    ssrn:
+    stackoverflow:
+    zenodo:
+    zotero:
+  links:
+  # See also how links are displayed in _includes/author-profile.html
+  # uncomment url to make link appear
     - label: "Email"  # used above
       icon: "fas fa-fw fa-envelope"
-    #   url: "mailto:your.name@email.com"
+      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-    #   url: "https://cristal-sigma.github.io"
+      # url: "https://<webpage-link>"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-    #   # url: "https://twitter.com/"
+      # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-    #   # url: "https://facebook.com/"
+      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-    #   url: "https://github.com/CRIStAL-Sigma"
+      # url: "https://github.com/CRIStAL-Sigma"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-    #   # url: "https://instagram.com/"
+      # url: "https://instagram.com/"
 
 # Site Footer
+# - see how links are displayed in _includes/footer.html
+# - add custom links in _includes/footer/custom.html
 footer:
-  links:  # uncomment url: to make link appear
+  links:  # uncomment url to make link appear
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-    #   # url:
+      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-    #   # url:
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github/CRIStAL-Sigma"
@@ -140,11 +218,10 @@ footer:
       # url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
-    #   # url:
+      # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-    #   # url:
-
+      # url:
 
 # Reading Files
 include:
