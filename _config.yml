@@ -318,7 +318,8 @@ scholar:
 
   query: "@*"
 
-  # bibliography_template: bibliography #./_layouts/bibliography.html, dsisplay additional infos
+  # Customize bibliography display in _layouts/bibliography.html
+  # bibliography_template: bibliography
 
 
 # mimic GitHub Pages with --safe
