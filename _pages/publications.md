@@ -6,10 +6,6 @@ author_profile: true
 title: "Publications"
 ---
 
-<!-- To query a specific file, listed in the `scholar:` section of the in `_config.yml` file, add the `-f <file-name>~~.bib~~`
-{% bibliography_count -f example --query @book %}
-{% bibliography -f example --query @book %} -->
-
 {% if site.author.academic_profiles.google-scholar %}
   <a href="{{ site.author.academic_profiles.google-scholar }}">
     <i class="ai ai-google-scholar" aria-hidden="true"></i>Scholar
@@ -31,7 +27,20 @@ title: "Publications"
   </a>
 {% endif %}
 
-<!-- Books -->
+<!-- See also https://github.com/inukshuk/jekyll-scholar to customize your references -->
+
+This is a mock example: the references are not correct!
+
+<!-- Preprints -->
+{% capture counter_preprints %}
+  {% bibliography_count --query @unpublished %}
+{% endcapture %}
+{% if counter_preprints != "0" %}
+  <h2>Preprints</h2>
+  {% bibliography --query @unpublished %}
+{% endif %}
+
+<!-- Journal articles-->
 {% capture counter_book %}
   {% bibliography_count --query @book %}
 {% endcapture %}
