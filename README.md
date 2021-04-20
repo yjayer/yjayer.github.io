@@ -32,7 +32,7 @@ At this point you can check the url `https://<github-username>.github.io`, it sh
 
   ```bash
     cd <directory-of-your-choice>
-    git clone https://<github-username>/<github-username>.github.io.git
+    git clone https://github.com/<github-username>/<github-username>.github.io.git
   ```
 
 ### Install local dependencies
