@@ -95,7 +95,16 @@ Note: you can also write plain HTML in `.md` files.
 
 ### Meta-data
 
-Fill in the `_config.yml` with your meta-data
+Fill in the `_config.yml` with your meta-data.
+
+Note: any changes made to the `_config.yml` file requires the site to be rebuilt, see [Build and serve your site locally](#Build-and-serve-your-site-locally).
+
+### Color skin
+
+For this project we chosen to the "dark" skin by default, but you can choose a different one:
+
+- change the `minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "default", "dirt", "neon", "mint", "plum" "sunrise"` in the `_config.yml` file
+- skins are showcased [here](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin)
 
 ### Main/Home page
 
