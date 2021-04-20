@@ -114,6 +114,24 @@ This project makes use of the [jekyll-scholar](https://github.com/inukshuk/jekyl
 - configure your bibliography setup in the `scholar:` section in the `_config.yml`
   - see also [jekyll-scholar's documentation](https://github.com/inukshuk/jekyll-scholar)
 
+#### Buttons with links
+
+Buttons with links will appear for references having non empty fields
+
+```bibtex
+@type{bib-key
+...
+url = {}
+arxivid = {}
+code = {<link-to-code-repository>}
+video = {<link-to-video>}
+...
+}
+```
+
+Additionally, if you store poster and slides files as `/assets/pds/<bib-key>_poster.pdf` or `/assets/pds/<bib-key>_slides.pdf`
+the corresponding buttons will also be displayed.
+
 ## Deploy your site
 
 Your site `https://<github-username>.github.io` will be deployed by GitHub Pages from your `gh-pages` branch.
