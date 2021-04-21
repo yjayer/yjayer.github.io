@@ -14,27 +14,27 @@ Note
 
 ### Set up your GitHub repository
 
-- [Register for a GitHub account](https://github.com/join)
+- [Register for a GitHub account](https://github.com/join),
 
-- [Fork](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/fork) the repository
+- [Fork](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/fork) the repository.
 
   This will allow you to interact with [github.com/CRIStAL-Sigma/cristal-sigma.github.io](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/repository) and [github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) repositories (pulling updates, proposing pull requests, etc.) based on the fact that you'll share a common history.
   Note: [this long history](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/commits/master) may take some space on your local machine.
 
-- Rename the repository as `<github-username>.github.io`
-  - Go to `Settings/Options/Repository name`
-  - Your website's URL will be `https://<github-username>.github.io`
+- Rename the repository as `<github-username>.github.io`:
+  - Go to `Settings/Options/Repository name`,
+  - Your website's URL will be `https://<github-username>.github.io`.
 
-- Setup GitHub Pages to deploy your site from the `gh-pages` branch
-  - Go to `Settings/Pages/Source`
-  - Select the `gh-pages` branch and `/ (root)` folder
+- Setup GitHub Pages to deploy your site from the `gh-pages` branch:
+  - Go to `Settings/Pages/Source`,
+  - Select the `gh-pages` branch and `/ (root)` folder.
 
-At this point you can check the url `https://<github-username>.github.io`, it should look like [https://cristal-sigma.github.io](https://cristal-sigma.github.io/)
+At this point you can check the url `https://<github-username>.github.io`, it should look like [https://cristal-sigma.github.io](https://cristal-sigma.github.io/).
 
 ### Get a local copy of your remote GitHub repository
 
-- Make sure you have [`git`](https://git-scm.com/) installed on your computer
-- Clone your repository on your computer
+- Make sure you have [`git`](https://git-scm.com/) installed on your computer,
+- Clone your repository on your computer:
 
   ```bash
     cd <directory-of-your-choice>
@@ -44,15 +44,15 @@ At this point you can check the url `https://<github-username>.github.io`, it sh
 ### Install local dependencies
 
 Your website is powered by [Jekyll](https://jekyllrb.com/) and [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/).
-In order to [Build and serve your site locally](#Build-and-serve-your-site-locally) your need to install some dependencies.
+In order to [build and serve your site locally](#Build-and-serve-your-site-locally) your need to install some dependencies.
 
 - Follow the [installation instructions](https://jekyllrb.com/docs/installation/) of [Jekyll](https://jekyllrb.com/) to get
 
-  - Ruby
-  - Bundler
-  - Jekyll
+  - Ruby,
+  - Bundler,
+  - Jekyll.
 
-- Install the project dependencies (`github-pages`, `minimal-mistakes-jekyll`, `jekyll-scholar`) stored in the `Gemfile` file
+- Install the project dependencies (`github-pages`, `minimal-mistakes-jekyll`, `jekyll-scholar`) stored in the `Gemfile` file:
 
   ```bash
     cd <path-to-github-username.github.io>
@@ -83,20 +83,20 @@ If you go to [http://127.0.0.1:4000](http://127.0.0.1:4000) on your browser you 
 
 More specifically,
 
-- `bundle exec` builds the site and outputs `.html` files, stored in the `_site` folder
-- `jekyll serve` opens a port to make the site available in a local server, here `http://127.0.0.1:4000`
-- `--livereload` automatically refreshes the page according to each change made to the source files
+- `bundle exec` builds the site and outputs `.html` files, stored in the `_site` folder,
+- `jekyll serve` opens a port to make the site available in a local server, here `http://127.0.0.1:4000`,
+- `--livereload` automatically refreshes the page according to each change made to the source files.
 
 ## Modify the content of your site
 
-You can create pages, posts, add images etc., using simple Markdown syntax in `.md` files
+You can create pages, posts, add images etc., using simple Markdown syntax in `.md` files.
 
 Have a look at
 
-- [Minimal Mistake's documentation](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
-- [Jekyll's documentation](https://jekyllrb.com/docs/)
-- [Markdown syntax guide](https://www.markdownguide.org/)
-- [Liquid syntax guide](https://shopify.github.io/liquid/)
+- [Minimal Mistake's documentation](https://mmistakes.github.io/minimal-mistakes/docs/configuration/),
+- [Jekyll's documentation](https://jekyllrb.com/docs/),
+- [Markdown syntax guide](https://www.markdownguide.org/),
+- [Liquid syntax guide](https://shopify.github.io/liquid/).
 
 Note: you can also write plain HTML in `.md` files.
 
@@ -104,31 +104,30 @@ Note: you can also write plain HTML in `.md` files.
 
 Fill in the `_config.yml` with your meta-data.
 
-Note: any changes made to the `_config.yml` file require the site to be rebuilt, see [Build and serve your site locally](#Build-and-serve-your-site-locally).
+Note: any changes made to the `_config.yml` file require the site to be rebuilt, see [build and serve your site locally](#Build-and-serve-your-site-locally).
 
 ### Color skin
 
 For this project we have selected the "dark" skin as default, but you can choose a different one:
 
-- change the `minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "default", "dirt", "neon", "mint", "plum" "sunrise"` in the `_config.yml` file
-- skins are showcased [here](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin)
+- change the `minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "default", "dirt", "neon", "mint", "plum" "sunrise"` in the `_config.yml` file,
+- skins are showcased [here](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#skin).
 
 ### Main/Home page
 
-The main/home page of your website is defined in the `index.md` (or `index.html`) file at the root of the project
+The main/home page of your website is defined in the `index.md` (or `index.html`) file at the root of the project.
 
 ### Bibliography
 
 This project makes use of the [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) plugin to manage bibliographic entries.
 
 - The default `.bib` file is
-  - located at `_bibliography/example.bib`
-  - set as default in `scholar:` section of the `_config.yml` file
+  - located at `_bibliography/example.bib`,
+  - set as default in `scholar:` section of the `_config.yml` file.
 - The default "Publications" page is
-  - declared in `_pages/publications.md`
-  - set as a website page in `_data/navigation.yml`
-- configure your bibliography setup in the `scholar:` section in the `_config.yml`
-  - see also [jekyll-scholar's documentation](https://github.com/inukshuk/jekyll-scholar)
+  - declared in `_pages/publications.md`,
+  - set as a website page in `_data/navigation.yml`.
+- Configuration options of your bibliography can be passed in the `scholar:` section of the `_config.yml` file, see also [jekyll-scholar's documentation](https://github.com/inukshuk/jekyll-scholar).
 
 #### Buttons with links
 
@@ -150,7 +149,7 @@ the corresponding buttons will also be displayed.
 
 ## Deploy your site
 
-Your site `https://<github-username>.github.io` will be deployed by GitHub Pages from your `gh-pages` branch.
+Your site `https://<github-username>.github.io` will be deployed by GitHub Pages from your remote `gh-pages` branch (set up as the source branch for GitHub Pages in [set up your GitHub repository](#Set-up-your-GitHub-repository))
 
 However, this project uses the [`jekyll-scholar`](https://github.com/inukshuk/jekyll-scholar) plugin to render bibliography contents, which is incompatible with the GitHub Pages workflow.
 
@@ -171,8 +170,8 @@ To do this (see also the [GitHub gist](https://gist.github.com/cobyism/4730490#g
     git push origin `git subtree split --prefix _site master`:gh-pages --force
   ```
 
-  GitHub Pages will automatically generate your website from the source files you've pushed on the `gh-pages` branch (set up as the source branch in [Set up your GitHub repository](#Set-up-your-GitHub-repository))
+  GitHub Pages will automatically generate your website from the source files you've pushed on the `gh-pages` branch.
 
-- That's it!  You can check the results at `https://<github-username>.github.io`
+- That's it! You can check the results at `https://<github-username>.github.io`
 
   Note: you may need to clean some of your browser's navigation data like cache or cookies to see the changes online.
