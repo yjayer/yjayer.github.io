@@ -16,18 +16,31 @@ Note
 
 - [Register for a GitHub account](https://github.com/join),
 
-- [Fork](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/fork) the repository.
+Two different paths are suggested:
 
-  This will allow you to interact with [github.com/CRIStAL-Sigma/cristal-sigma.github.io](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/repository) and [github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) repositories (pulling updates, proposing pull requests, etc.) based on the fact that you'll share a common history.
-  Note: [this long history](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/commits/master) may take some space on your local machine.
+1. [Fork](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/fork) the repository.
 
-- Rename the repository as `<github-username>.github.io`:
-  - Go to `Settings/Options/Repository name`,
-  - Your website's URL will be `https://<github-username>.github.io`.
+    This will allow you to interact with [github.com/CRIStAL-Sigma/cristal-sigma.github.io](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/repository) and [github.com/mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) repositories (raise [issues](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/issues), get updates, propose [pull requests](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/pulls), etc.) based on the fact that you'll share a common history.
 
-- Setup GitHub Pages to deploy your site from the `gh-pages` branch:
-  - Go to `Settings/Pages/Source`,
-  - Select the `gh-pages` branch and `/ (root)` folder.
+    a) Rename the repository as `<github-username>.github.io` in `Settings/Options/Repository name`.
+
+    Note: [this long history](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/commits/master) may take some space on your local machine.
+
+2. [Create a new repository from the template](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/generate)
+
+    The new repository will start with the same files and folders as [CRIStAL-Sigma/cristal-sigma.github.io](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io), but with your own fresh history.
+    You will be able to interact with [CRIStAL-Sigma/cristal-sigma.github.io](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io) only by raising [issues](https://github.com/CRIStAL-Sigma/cristal-sigma.github.io/issues).
+
+    a) Name the repository as `<github-username>.github.io`,
+
+    b) Tick the box "Include all branches".
+
+---
+
+In both cases, make sure to set up GitHub Pages to deploy your site from the `gh-pages` branch:
+
+- Go to `Settings/Pages/Source`,
+- Select the `gh-pages` branch and `/ (root)` folder.
 
 At this point you can check the url `https://<github-username>.github.io`, it should look like [https://cristal-sigma.github.io](https://cristal-sigma.github.io/).
 
