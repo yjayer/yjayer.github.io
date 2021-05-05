@@ -11,19 +11,19 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 remote_theme: "mmistakes/minimal-mistakes@4.22.0"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "default", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "sunrise" # "air", "aqua", "contrast", "dark", "default", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "en-US"
-title: "Site Title"
+title: "yjayer"
 title_separator: "-"
-subtitle: "subtitle" # site tagline that appears below site title in masthead
-name: "FirstName LastName"
-description: "Description"
+subtitle: "" # site tagline that appears below site title in masthead
+name: "Yoann Jayer"
+description: "PhD student"
 github: [metadata]
 url: "https://cristal-sigma.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: "CRIStAL-Sigma/cristal-sigma.github.io"
+repository: "yjayer/yjayer.github.io"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
@@ -97,13 +97,13 @@ analytics:
 # _includes/author-profile.html
 # _includes/author-profile-custom-links.html
 author:
-  name: "FirstName LastName"
+  name: "Yoann Jayer"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "My short bio"
+  bio: "PhD Student"
   location: "Lille, France"
-  email: "my.name@email.com"
-  github: "CRIStAL-Sigma"
-  webpage: "https://cristal-sigma.github.io"
+  email: "yjayer@gmail.com"
+  github: "yjayer"
+  webpage: "https://yjayer.github.io"
   # Academic profiles
   # To make logo+link appear in author_profile on the left side of the page
   # - fill the corresponding field
